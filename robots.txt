@@ -1,0 +1,7 @@
+# TODO: replace the domain below with the real production domain
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+
+Sitemap: https://24ethnoavenue.ua/sitemap.xml

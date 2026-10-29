@@ -1,0 +1,172 @@
+/* 24 ETHNO AVENUE — product & content data
+   Real product photography from the brand's own lookbook. */
+
+const CATEGORIES = [
+  { id: "zhaket", title: "Jacket", image: "p1-1.jpg" },
+  { id: "halat", title: "Robe", image: "p10-1.jpg" },
+  { id: "zhylet", title: "Vest", image: "p11-1.jpg" },
+  { id: "kostyum", title: "Suit", image: "p13-1.jpg" },
+  { id: "spidnytsya", title: "Skirt", image: "p14-1.jpg" },
+];
+
+const PRODUCTS = [
+  {
+    id: 1, name: "Jacket “Poppies” with Embroidered Sleeve", category: "zhaket",
+    price: 13400, isNew: true, isSale: false,
+    colors: ["Black"], sizes: ["XS", "S", "M", "L"],
+    images: ["p1-1.jpg", "p1-2.jpg", "p1-3.jpg"],
+    description: "An oversized, straight-cut jacket with hand-embroidered poppies on the sleeve. Worn over a white shirt or on its own — a statement piece of the “Ukrainian Mood” collection.",
+    composition: "80% wool, 20% polyester. Embroidery — wool and cotton thread.",
+    care: "Professional dry cleaning only, with delicate handling of the embroidery.",
+  },
+  {
+    id: 2, name: "Jacket “Poppies” Chest Embroidery", category: "zhaket",
+    price: 13400, isNew: false, isSale: false,
+    colors: ["Black"], sizes: ["XS", "S", "M", "L"],
+    images: ["p2-1.jpg", "p2-2.jpg", "p2-3.jpg"],
+    description: "A classic double-breasted jacket with a large poppy embroidery across the chest. Straight shoulder line, fitted silhouette.",
+    composition: "80% wool, 20% polyester. Embroidery — wool and cotton thread.",
+    care: "Professional dry cleaning only, with delicate handling of the embroidery.",
+  },
+  {
+    id: 3, name: "Jacket with Geometric Ornament", category: "zhaket",
+    price: 12800, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p3-1.jpg", "p3-2.jpg", "p3-3.jpg"],
+    description: "An oversized tweed jacket with a geometric-ornament panel on the shoulder — hand cross-stitch embroidery inspired by traditional Ukrainian rushnyky (ceremonial towels).",
+    composition: "75% wool, 25% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 4, name: "Jacket “Voice of Freedom”", category: "zhaket",
+    price: 14200, isNew: true, isSale: false,
+    colors: ["Black"], sizes: ["XS", "S", "M", "L"],
+    images: ["p4-1.jpg", "p4-2.jpg"],
+    description: "A jacket with a poem printed on the back and flag-colored fringe on the shoulder — a collaboration with the poetry series “Do You Know You’re Human?”",
+    composition: "78% wool, 22% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 5, name: "Metallic Jacket with Art Print", category: "zhaket",
+    price: 13900, isNew: false, isSale: false,
+    colors: ["Black"], sizes: ["S", "M", "L"],
+    images: ["p5-1.jpg", "p5-2.jpg"],
+    description: "A jacket with a metallic panel and a hand-painted art print on the back — a limited art collaboration.",
+    composition: "80% wool, 20% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 6, name: "Jacket with Embroidery and Fringe", category: "zhaket",
+    price: 12600, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p6-1.jpg", "p6-2.jpg"],
+    description: "An oversized jacket with decorative rushnyk-colored fringe on the sleeve and collar.",
+    composition: "76% wool, 24% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 7, name: "Jacket with Art Print", category: "zhaket",
+    price: 13100, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p7-1.jpg", "p7-2.jpg"],
+    description: "A jacket with a hand-painted sleeve — each piece is unique due to the hand-applied technique.",
+    composition: "75% wool, 25% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 8, name: "Chocolate Jacket with Sequins", category: "zhaket",
+    price: 15400, isNew: true, isSale: false,
+    colors: ["Beige"], sizes: ["XS", "S", "M", "L"],
+    images: ["p8-1.jpg", "p8-2.jpg", "p8-3.jpg"],
+    description: "A fitted, chocolate-colored jacket with decorative sequins along the lapels and cuffs.",
+    composition: "82% wool, 18% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 9, name: "Tweed Jacket with Tie", category: "zhaket",
+    price: 12900, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p9-1.jpg"],
+    description: "A herringbone tweed jacket with decorative rushnyk-colored trim on the collar and pocket. Styled with the brand’s signature red tie.",
+    composition: "78% wool, 22% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 10, name: "Oversized Robe with Embroidery", category: "halat",
+    price: 11800, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p10-1.jpg", "p10-2.jpg", "p10-3.jpg"],
+    description: "An elongated, loose-cut robe-jacket worn open. Decorative embroidery on the chest pocket.",
+    composition: "80% wool, 20% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 11, name: "Green Knit Vest", category: "zhylet",
+    price: 6400, isNew: true, isSale: false,
+    colors: ["Burgundy"], sizes: ["XS", "S", "M"],
+    images: ["p11-1.jpg", "p11-2.jpg", "p11-3.jpg"],
+    description: "A fitted, button-up vest with a dropped waist — part of a set with the matching skirt.",
+    composition: "70% viscose, 25% polyester, 5% elastane.",
+    care: "Delicate wash at 30°C.",
+  },
+  {
+    id: 12, name: "Tweed Vest with Tie", category: "zhylet",
+    price: 7200, isNew: false, isSale: false,
+    colors: ["Beige"], sizes: ["S", "M", "L"],
+    images: ["p12-1.jpg", "p12-2.jpg", "p12-3.jpg"],
+    description: "An elongated tweed vest with decorative rushnyk-colored trim along the armhole. Comes with the brand’s signature tie.",
+    composition: "78% wool, 22% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 13, name: "Suit “Ukrainian Mood” (Jacket + Skirt)", category: "kostyum",
+    price: 18900, isNew: true, isSale: false,
+    colors: ["Black"], sizes: ["XS", "S", "M", "L"],
+    images: ["p13-1.jpg"],
+    description: "A two-piece suit: a fitted jacket with an embroidered chest pocket and a straight-cut midi skirt. One of the collection’s signature looks.",
+    composition: "76% wool, 24% polyester.",
+    care: "Dry clean only.",
+  },
+  {
+    id: 14, name: "Green Pleated Skirt", category: "spidnytsya",
+    price: 3800, isNew: false, isSale: false,
+    colors: ["Burgundy"], sizes: ["XS", "S", "M"],
+    images: ["p14-1.jpg", "p14-2.jpg"],
+    description: "A pleated mini skirt with a slit — part of a set with the matching vest.",
+    composition: "70% viscose, 25% polyester, 5% elastane.",
+    care: "Delicate wash at 30°C.",
+  },
+  {
+    id: 15, name: "Black Midi Skirt", category: "spidnytsya",
+    price: 4200, isNew: false, isSale: false,
+    colors: ["Black"], sizes: ["XS", "S", "M", "L"],
+    images: ["p15-1.jpg"],
+    description: "A high-waisted, straight-cut midi skirt — part of the “Ukrainian Mood” suit.",
+    composition: "76% wool, 24% polyester.",
+    care: "Dry clean only.",
+  },
+];
+
+const COLOR_HEX = {
+  "Black": "#1A1A1A",
+  "Beige": "#8A7A63",
+  "Cream": "#EFE7D8",
+  "Burgundy": "#7A2635",
+};
+
+const INSTAGRAM_FEED = [
+  { image: "p4-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p11-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p8-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "insta-extra.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p3-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p13-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p9-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p6-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p2-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+  { image: "p12-1.jpg", url: "https://instagram.com/24ethno_avenue" },
+];
+
+function formatUAH(value) {
+  return new Intl.NumberFormat("en-US").format(value) + " ₴";
+}
